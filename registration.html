@@ -1,0 +1,139 @@
+
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Registration Form</title>
+</head>
+<body>
+    <header>
+        <h1>Registration Form</h1>
+        <nav aria-label="Main navigation">
+            <a href="index.html">Home</a>
+            <a href="about.html">About</a>
+            <a href="services.html">Services</a>
+            <a href="blog.html">Blog</a>
+            <a href="contact.html">Contact</a>
+            <a href="profile.html">Profile</a>
+            <a href="registration.html">Register</a>
+        </nav>
+    </header>
+
+    <main>
+        <form action="#" method="get">
+
+            <fieldset>
+                <legend>Personal Information</legend>
+
+                <p>
+                    <label for="first-name">First Name:</label>
+                    <input type="text" id="first-name" name="first_name" required>
+                </p>
+
+                <p>
+                    <label for="last-name">Last Name:</label>
+                    <input type="text" id="last-name" name="last_name" required>
+                </p>
+
+                <p>
+                    <label for="email">Email:</label>
+                    <input type="email" id="email" name="email" required>
+                </p>
+
+                <p>
+                    <label for="phone">Phone Number:</label>
+                    <input type="tel" id="phone" name="phone" required>
+                </p>
+
+                <p>
+                    <label for="birthdate">Date of Birth:</label>
+                    <input type="date" id="birthdate" name="birthdate" required>
+                </p>
+
+                <p>
+                    <label for="age">Age:</label>
+                    <input type="number" id="age" name="age" min="16" max="100" required>
+                </p>
+
+                <p>
+                    <label for="gender">Gender:</label>
+                    <select id="gender" name="gender" required>
+                        <option value="">Select Gender</option>
+                        <option value="female">Female</option>
+                        <option value="male">Male</option>
+                        <option value="other">Other</option>
+                    </select>
+                </p>
+            </fieldset>
+
+            <fieldset>
+                <legend>Address Information</legend>
+
+                <p>
+                    <label for="country">Country:</label>
+                    <input type="text" id="country" name="country" required>
+                </p>
+
+                <p>
+                    <label for="city">City:</label>
+                    <input type="text" id="city" name="city" required>
+                </p>
+
+                <p>
+                    <label for="street">Street:</label>
+                    <input type="text" id="street" name="street">
+                </p>
+
+                <p>
+                    <label for="postal-code">Postal Code:</label>
+                    <input type="text" id="postal-code" name="postal_code">
+                </p>
+            </fieldset>
+
+            <fieldset>
+                <legend>Account Information</legend>
+
+                <p>
+                    <label for="username">Username:</label>
+                    <input type="text" id="username" name="username" minlength="4" required>
+                </p>
+
+                <p>
+                    <label for="password">Password:</label>
+                    <input type="password" id="password" name="password" minlength="8" required>
+                </p>
+
+                <p>
+                    <label for="website">Website:</label>
+                    <input type="url" id="website" name="website">
+                </p>
+
+                <p>
+                    <label for="experience">Years of Experience:</label>
+                    <input type="number" id="experience" name="experience" min="0" max="50">
+                </p>
+
+                <p>
+                    <label for="bio">Short Biography:</label>
+                    <textarea id="bio" name="bio" rows="4"></textarea>
+                </p>
+
+                <p>
+                    <input type="checkbox" id="terms" name="terms" required>
+                    <label for="terms">I agree to the terms and conditions</label>
+                </p>
+            </fieldset>
+
+            <p>
+                <button type="submit">Register</button>
+                <button type="reset">Clear Form</button>
+            </p>
+        </form>
+    </main>
+
+    <footer>
+        <p>Copyright 2026 | Our Company</p>
+    </footer>
+</body>
+</html>
