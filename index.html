@@ -1,27 +1,27 @@
 
 <!DOCTYPE html>
 <html lang="en">
-
 <head>
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <title>Company Homepage</title>
     <link rel="stylesheet" href="css/style.css">
 </head>
-
 <body>
     <header>
-        <h1>Welcome to Our Company</h1>
-
-        <nav aria-label="Main navigation">
-            <a href="index.html">Home</a>
-            <a href="about.html">About</a>
-            <a href="services.html">Services</a>
-            <a href="blog.html">Blog</a>
-            <a href="contact.html">Contact</a>
-            <a href="profile.html">My Profile</a>
-            <a href="registration.html">Register</a>
-        </nav>
+        <div class="header-container">
+            <h1>Welcome to Our Company</h1>
+            <nav aria-label="Main navigation">
+                <a href="index.html">Home</a>
+                <a href="about.html">About</a>
+                <a href="services.html">Services</a>
+                <a href="blog.html">Blog</a>
+                <a href="contact.html">Contact</a>
+                <a href="profile.html">My Profile</a>
+                <a href="registration.html">Register</a>
+                <a href="dashboard.html">Dashboard</a>
+            </nav>
+        </div>
     </header>
 
     <main>
@@ -41,21 +41,22 @@
 
         <section>
             <h2>Our Services</h2>
+            <div class="card-grid">
+                <article>
+                    <h3>Web Development</h3>
+                    <p>We build websites for businesses.</p>
+                </article>
 
-            <article>
-                <h3>Web Development</h3>
-                <p>We build websites for businesses.</p>
-            </article>
+                <article>
+                    <h3>Mobile Applications</h3>
+                    <p>We develop mobile applications.</p>
+                </article>
 
-            <article>
-                <h3>Mobile Applications</h3>
-                <p>We develop mobile applications.</p>
-            </article>
-
-            <article>
-                <h3>Software Solutions</h3>
-                <p>We create software to support business needs.</p>
-            </article>
+                <article>
+                    <h3>Software Solutions</h3>
+                    <p>We create software to support business needs.</p>
+                </article>
+            </div>
         </section>
     </main>
 
@@ -63,5 +64,4 @@
         <p>Copyright 2026 | Our Company</p>
     </footer>
 </body>
-
 </html>
