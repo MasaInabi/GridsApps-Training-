@@ -1,0 +1,463 @@
+
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <meta name="theme-color" content="#08090d">
+    <title>Company | Premium Digital Experiences</title>
+    <link rel="preconnect" href="https://fonts.googleapis.com">
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+    <link href="https://fonts.googleapis.com/css2?family=DM+Sans:wght@400;500;600;700&family=Outfit:wght@400;500;600;700;800&display=swap" rel="stylesheet">
+    <link href="https://cdn.jsdelivr.net/npm/bootstrap@5.3.3/dist/css/bootstrap.min.css" rel="stylesheet">
+    <link rel="stylesheet" href="bootstrap.css">
+</head>
+<body>
+    <div class="ambient ambient-one" aria-hidden="true"></div>
+    <div class="ambient ambient-two" aria-hidden="true"></div>
+    <div class="noise-layer" aria-hidden="true"></div>
+
+    <header class="site-header">
+        <nav class="navbar navbar-expand-lg glass-nav" aria-label="Main navigation">
+            <div class="container">
+                <a class="navbar-brand brand" href="#home">
+                    <span class="brand-symbol">C</span>
+                    COMPANY<span class="brand-dot">.</span>
+                </a>
+                <button class="navbar-toggler" id="menuToggle" type="button" data-bs-toggle="offcanvas" data-bs-target="#mobileNav" aria-controls="mobileNav" aria-haspopup="dialog" aria-label="Open navigation">
+                    <span class="navbar-toggler-icon"></span>
+                </button>
+                <div class="d-none d-lg-flex flex-grow-1 align-items-center">
+                    <ul class="navbar-nav mx-auto gap-lg-3">
+                        <li class="nav-item"><a class="nav-link" href="#home">Home</a></li>
+                        <li class="nav-item"><a class="nav-link" href="#services">Services</a></li>
+                        <li class="nav-item"><a class="nav-link" href="#pricing">Pricing</a></li>
+                        <li class="nav-item"><a class="nav-link" href="#dashboard">Dashboard</a></li>
+                        <li class="nav-item"><a class="nav-link" href="#faq">FAQ</a></li>
+                    </ul>
+                    <button class="btn btn-glass me-2" type="button" data-bs-toggle="modal" data-bs-target="#contactModal">Contact</button>
+                    <a class="btn btn-glow nav-cta" href="#pricing">Get Started <span aria-hidden="true">↗</span></a>
+                </div>
+            </div>
+        </nav>
+    </header>
+
+    <div class="offcanvas-lg offcanvas-end glass-overlay d-lg-none" id="mobileNav" tabindex="-1" aria-labelledby="mobileNavTitle" data-bs-theme="dark">
+        <div class="offcanvas-header">
+            <h2 class="offcanvas-title" id="mobileNavTitle">Menu<span class="orange-text">.</span></h2>
+            <button class="btn-close" type="button" data-bs-dismiss="offcanvas" aria-label="Close navigation"></button>
+        </div>
+        <nav class="offcanvas-body" aria-label="Mobile navigation">
+            <ul class="navbar-nav gap-2">
+                <li><a class="nav-link" href="#home">Home</a></li>
+                <li><a class="nav-link" href="#services">Services</a></li>
+                <li><a class="nav-link" href="#pricing">Pricing</a></li>
+                <li><a class="nav-link" href="#dashboard">Dashboard</a></li>
+                <li><a class="nav-link" href="#faq">FAQ</a></li>
+            </ul>
+            <div class="d-grid gap-3 mt-4">
+                <a class="btn btn-glow" href="#pricing">Get Started <span aria-hidden="true">↗</span></a>
+                <button class="btn btn-glass" id="mobileContact" type="button">Contact</button>
+            </div>
+        </nav>
+    </div>
+
+    <main>
+        <section id="home" class="hero-section" tabindex="-1">
+            <div class="hero-orbit orbit-one" aria-hidden="true"></div>
+            <div class="hero-orbit orbit-two" aria-hidden="true"></div>
+            <div class="container position-relative">
+                <div class="row align-items-center g-5">
+                    <div class="col-12 col-lg-6">
+                        <div class="eyebrow-pill"><span class="pulse-dot"></span> BOOTSTRAP 5.3 · DAY 07</div>
+                        <h1 class="hero-title">We build the <span class="gradient-text">extraordinary.</span></h1>
+                        <p class="hero-description">Beautiful digital experiences, thoughtfully engineered. We turn ambitious ideas into powerful websites, applications, and software solutions.</p>
+                        <div class="d-flex flex-wrap gap-3 mt-4">
+                            <a href="#services" class="btn btn-glow btn-lg">Explore Our Work <span aria-hidden="true">↗</span></a>
+                            <a href="#dashboard" class="btn btn-glass btn-lg">View Dashboard <span aria-hidden="true">→</span></a>
+                        </div>
+                        <div class="hero-trust d-flex flex-wrap gap-4 mt-5">
+                            <div><strong>HTML5</strong><span>Structure</span></div>
+                            <div><strong>CSS3</strong><span>Visual Design</span></div>
+                            <div><strong>BS 5</strong><span>Framework</span></div>
+                        </div>
+                    </div>
+                    <div class="col-12 col-lg-6">
+                        <div class="hero-visual">
+                            <div class="visual-glow" aria-hidden="true"></div>
+                            <div class="floating-label label-top"><span class="live-dot"></span> SYSTEM ONLINE</div>
+                            <div class="glass-window">
+                                <div class="window-header d-flex justify-content-between align-items-center">
+                                    <div class="window-dots"><i></i><i></i><i></i></div>
+                                    <span>company / overview</span>
+                                    <span class="window-status">● LIVE</span>
+                                </div>
+                                <div class="window-content">
+                                    <div class="d-flex justify-content-between align-items-center mb-4">
+                                        <div>
+                                            <span class="tiny-label">PROJECT OVERVIEW</span>
+                                            <h2>Creative workspace<span class="orange-text">.</span></h2>
+                                        </div>
+                                        <span class="mini-icon">↗</span>
+                                    </div>
+                                    <div class="row g-3">
+                                        <div class="col-6">
+                                            <div class="preview-stat">
+                                                <span>Design</span>
+                                                <strong>01<span class="orange-text">.</span></strong>
+                                                <small>Creative direction</small>
+                                            </div>
+                                        </div>
+                                        <div class="col-6">
+                                            <div class="preview-stat">
+                                                <span>Develop</span>
+                                                <strong>02<span class="orange-text">.</span></strong>
+                                                <small>Clean implementation</small>
+                                            </div>
+                                        </div>
+                                    </div>
+                                    <div class="preview-chart mt-3">
+                                        <div class="d-flex justify-content-between align-items-center mb-3">
+                                            <span>Design workflow</span><span class="orange-text">ACTIVE</span>
+                                        </div>
+                                        <div class="chart-bars" aria-label="Decorative workflow visualization">
+                                            <i style="--bar-height:35%"></i>
+                                            <i style="--bar-height:55%"></i>
+                                            <i style="--bar-height:42%"></i>
+                                            <i style="--bar-height:72%"></i>
+                                            <i style="--bar-height:61%"></i>
+                                            <i style="--bar-height:85%"></i>
+                                            <i style="--bar-height:70%"></i>
+                                            <i style="--bar-height:95%"></i>
+                                            <i style="--bar-height:78%"></i>
+                                            <i style="--bar-height:100%"></i>
+                                        </div>
+                                    </div>
+                                </div>
+                            </div>
+                            <div class="floating-label label-bottom">✦ DESIGN · DEVELOP · DELIVER</div>
+                        </div>
+                    </div>
+                </div>
+                <div class="scroll-indicator"><span></span> SCROLL TO EXPLORE</div>
+            </div>
+        </section>
+
+        <section id="services" class="section-spacing" tabindex="-1">
+            <div class="container">
+                <div class="section-heading text-center">
+                    <span class="section-kicker">01 / OUR EXPERTISE</span>
+                    <h2>Made to <span class="gradient-text">make an impact.</span></h2>
+                    <p>Thoughtful solutions, modern technology, and a relentless focus on quality.</p>
+                </div>
+                <div class="row g-4 mt-3">
+                    <div class="col-12 col-md-6 col-lg-4">
+                        <article class="glass-card service-card h-100">
+                            <div class="service-icon"><span>⌘</span></div>
+                            <span class="service-number">01 / DEVELOPMENT</span>
+                            <h3>Web Development</h3>
+                            <p>High-performance, responsive websites built for beautiful experiences on every screen.</p>
+                            <div class="card-bottom"><span>HTML · CSS · Bootstrap</span><span class="arrow-circle">↗</span></div>
+                        </article>
+                    </div>
+                    <div class="col-12 col-md-6 col-lg-4">
+                        <article class="glass-card service-card h-100">
+                            <div class="service-icon"><span>▣</span></div>
+                            <span class="service-number">02 / APPLICATIONS</span>
+                            <h3>Mobile Applications</h3>
+                            <p>Intuitive digital experiences designed to connect businesses with their users.</p>
+                            <div class="card-bottom"><span>Mobile · UI · UX</span><span class="arrow-circle">↗</span></div>
+                        </article>
+                    </div>
+                    <div class="col-12 col-md-6 col-lg-4">
+                        <article class="glass-card service-card h-100">
+                            <div class="service-icon"><span>◇</span></div>
+                            <span class="service-number">03 / SOLUTIONS</span>
+                            <h3>Software Solutions</h3>
+                            <p>Purpose-built software that simplifies complex processes and supports business growth.</p>
+                            <div class="card-bottom"><span>Systems · Architecture</span><span class="arrow-circle">↗</span></div>
+                        </article>
+                    </div>
+                </div>
+            </div>
+        </section>
+
+        <section id="pricing" class="section-spacing pricing-section" tabindex="-1">
+            <div class="container">
+                <div class="section-heading text-center">
+                    <span class="section-kicker">02 / CHALLENGE B01</span>
+                    <h2>Simple plans. <span class="gradient-text">Big possibilities.</span></h2>
+                    <p>Choose the right starting point for your next digital project.</p>
+                </div>
+                <div class="row g-4 align-items-stretch mt-3">
+                    <div class="col-12 col-md-6 col-lg-4">
+                        <article class="glass-card pricing-card h-100 d-flex flex-column">
+                            <span class="plan-label">THE ESSENTIALS</span>
+                            <h3>Basic<span class="orange-text">.</span></h3>
+                            <p>For simple websites and getting started online.</p>
+                            <div class="plan-display">Starter</div>
+                            <div class="plan-divider"></div>
+                            <ul class="list-unstyled flex-grow-1">
+                                <li><span>✓</span> Responsive Design</li>
+                                <li><span>✓</span> Basic HTML Pages</li>
+                                <li><span>✓</span> Contact Form</li>
+                            </ul>
+                            <a href="mailto:hello@example.com?subject=Basic%20Plan" class="btn btn-glass w-100">Choose Basic ↗</a>
+                        </article>
+                    </div>
+                    <div class="col-12 col-md-6 col-lg-4">
+                        <article class="glass-card pricing-card featured h-100 d-flex flex-column">
+                            <span class="featured-badge">✦ MOST POPULAR</span>
+                            <span class="plan-label">FOR GROWING TEAMS</span>
+                            <h3>Standard<span class="orange-text">.</span></h3>
+                            <p>For businesses ready for a stronger digital presence.</p>
+                            <div class="plan-display">Business</div>
+                            <div class="plan-divider"></div>
+                            <ul class="list-unstyled flex-grow-1">
+                                <li><span>✓</span> Responsive Website</li>
+                                <li><span>✓</span> Multiple Pages</li>
+                                <li><span>✓</span> Custom Styling</li>
+                            </ul>
+                            <a href="mailto:hello@example.com?subject=Standard%20Plan" class="btn btn-glow w-100">Choose Standard ↗</a>
+                        </article>
+                    </div>
+                    <div class="col-12 col-md-6 col-lg-4">
+                        <article class="glass-card pricing-card h-100 d-flex flex-column">
+                            <span class="plan-label">BUILT FOR AMBITION</span>
+                            <h3>Premium<span class="orange-text">.</span></h3>
+                            <p>For advanced projects requiring custom solutions.</p>
+                            <div class="plan-display">Advanced</div>
+                            <div class="plan-divider"></div>
+                            <ul class="list-unstyled flex-grow-1">
+                                <li><span>✓</span> Custom Design</li>
+                                <li><span>✓</span> Advanced Features</li>
+                                <li><span>✓</span> Software Solutions</li>
+                            </ul>
+                            <a href="mailto:hello@example.com?subject=Premium%20Plan" class="btn btn-glass w-100">Choose Premium ↗</a>
+                        </article>
+                    </div>
+                </div>
+            </div>
+        </section>
+
+        <section id="dashboard" class="section-spacing dashboard-section" tabindex="-1">
+            <div class="container">
+                <div class="section-heading text-center">
+                    <span class="section-kicker">03 / CHALLENGE B03</span>
+                    <h2>Every detail. <span class="gradient-text">In focus.</span></h2>
+                    <p>A responsive dashboard summary, powered by the Bootstrap grid.</p>
+                </div>
+                <div class="row g-4 mt-3">
+                    <div class="col-12 col-sm-6 col-xl-3">
+                        <div class="glass-card kpi-card h-100">
+                            <div class="kpi-top"><span>WEBSITE PAGES</span><span class="kpi-symbol">▤</span></div>
+                            <strong>10<span class="orange-text">.</span></strong>
+                            <small>HTML project pages</small>
+                            <div class="kpi-line"></div>
+                        </div>
+                    </div>
+                    <div class="col-12 col-sm-6 col-xl-3">
+                        <div class="glass-card kpi-card h-100">
+                            <div class="kpi-top"><span>COMPLETED DAYS</span><span class="kpi-symbol">◷</span></div>
+                            <strong>05<span class="orange-text">.</span></strong>
+                            <small>Training milestones</small>
+                            <div class="kpi-line"></div>
+                        </div>
+                    </div>
+                    <div class="col-12 col-sm-6 col-xl-3">
+                        <div class="glass-card kpi-card h-100">
+                            <div class="kpi-top"><span>DESIGN THEME</span><span class="kpi-symbol">✦</span></div>
+                            <strong>Dark</strong>
+                            <small>Orange glass aesthetic</small>
+                            <div class="kpi-line"></div>
+                        </div>
+                    </div>
+                    <div class="col-12 col-sm-6 col-xl-3">
+                        <div class="glass-card kpi-card h-100">
+                            <div class="kpi-top"><span>FRAMEWORK</span><span class="kpi-symbol">⌘</span></div>
+                            <strong>BS 5</strong>
+                            <small>Responsive Bootstrap</small>
+                            <div class="kpi-line"></div>
+                        </div>
+                    </div>
+                    <div class="col-12 col-lg-8">
+                        <div class="glass-card dashboard-panel h-100">
+                            <div class="d-flex flex-wrap justify-content-between align-items-center gap-3">
+                                <div>
+                                    <span class="tiny-label">TRAINING OVERVIEW</span>
+                                    <h3>Project Progress</h3>
+                                </div>
+                                <span class="panel-badge">IN PROGRESS</span>
+                            </div>
+                            <div class="progress-details d-flex justify-content-between align-items-end">
+                                <div><strong>5 <span>/ 15</span></strong><small>Training days completed</small></div>
+                                <span class="progress-percent">33%</span>
+                            </div>
+                            <div class="progress custom-progress" role="progressbar" aria-label="Training progress" aria-valuenow="33" aria-valuemin="0" aria-valuemax="100">
+                                <div class="progress-bar" style="width:33.33%"></div>
+                            </div>
+                            <p class="panel-note">HTML and CSS foundations completed. Bootstrap development is in progress.</p>
+                        </div>
+                    </div>
+                    <div class="col-12 col-lg-4">
+                        <div class="glass-card dashboard-panel h-100">
+                            <span class="tiny-label">OUR TOOLKIT</span>
+                            <h3>Technologies</h3>
+                            <p class="panel-note">Built using modern web fundamentals.</p>
+                            <div class="d-flex flex-wrap gap-2 mt-4">
+                                <span class="tech-pill">HTML5</span>
+                                <span class="tech-pill">CSS3</span>
+                                <span class="tech-pill">Bootstrap 5</span>
+                                <span class="tech-pill">Flexbox</span>
+                                <span class="tech-pill">CSS Grid</span>
+                            </div>
+                        </div>
+                    </div>
+                </div>
+            </div>
+        </section>
+        <section id="faq" class="section-spacing faq-section" tabindex="-1">
+            <div class="container">
+                <div class="section-heading text-center">
+                    <h2>Frequently asked <span class="gradient-text">questions.</span></h2>
+                </div>
+                <div class="accordion glass-accordion mx-auto" id="faqAccordion" data-bs-theme="dark">
+                    <div class="accordion-item">
+                        <h3 class="accordion-header">
+                            <button class="accordion-button collapsed" type="button" data-bs-toggle="collapse" data-bs-target="#faqServices" aria-expanded="false" aria-controls="faqServices">What services do you offer?</button>
+                        </h3>
+                        <div class="accordion-collapse collapse" id="faqServices" data-bs-parent="#faqAccordion">
+                            <div class="accordion-body">We build responsive websites, mobile applications, and custom software for businesses with specific workflows or integration needs.</div>
+                        </div>
+                    </div>
+                    <div class="accordion-item">
+                        <h3 class="accordion-header">
+                            <button class="accordion-button collapsed" type="button" data-bs-toggle="collapse" data-bs-target="#faqPlans" aria-expanded="false" aria-controls="faqPlans">Which plan should I choose?</button>
+                        </h3>
+                        <div class="accordion-collapse collapse" id="faqPlans" data-bs-parent="#faqAccordion">
+                            <div class="accordion-body">Basic fits a simple site, Standard adds more pages and custom styling, and Premium covers advanced features and custom software.</div>
+                        </div>
+                    </div>
+                    <div class="accordion-item">
+                        <h3 class="accordion-header">
+                            <button class="accordion-button collapsed" type="button" data-bs-toggle="collapse" data-bs-target="#faqProject" aria-expanded="false" aria-controls="faqProject">What should I share about my project?</button>
+                        </h3>
+                        <div class="accordion-collapse collapse" id="faqProject" data-bs-parent="#faqAccordion">
+                            <div class="accordion-body">Include your goal, the features you need, and any target launch date. A short description is enough to start.</div>
+                        </div>
+                    </div>
+                </div>
+                <div class="text-center mt-4">
+                    <button class="btn btn-glow" type="button" data-bs-toggle="modal" data-bs-target="#contactModal">Contact us <span aria-hidden="true">↗</span></button>
+                </div>
+            </div>
+        </section>
+    </main>
+
+    <footer class="site-footer">
+        <div class="container d-flex flex-column flex-md-row justify-content-between align-items-center gap-3">
+            <a class="brand footer-brand" href="#home">COMPANY<span class="brand-dot">.</span></a>
+            <p class="mb-0">© 2026 Company. Crafted with precision.</p>
+            <span>GRIDS APPS TRAINING · DAY 07</span>
+        </div>
+    </footer>
+
+    <div class="modal fade" id="contactModal" tabindex="-1" aria-labelledby="contactTitle" data-bs-theme="dark">
+        <div class="modal-dialog modal-dialog-centered modal-dialog-scrollable">
+            <form class="modal-content glass-overlay" id="contactForm" novalidate>
+                <div class="modal-header">
+                    <h2 class="modal-title" id="contactTitle">Let’s talk<span class="orange-text">.</span></h2>
+                    <button class="btn-close" type="button" data-bs-dismiss="modal" aria-label="Close contact form"></button>
+                </div>
+                <div class="modal-body">
+                    <p class="contact-note">Share a few details about your project. All fields are required.</p>
+                    <div class="mb-3">
+                        <label class="form-label" for="contactName">Name</label>
+                        <input class="form-control" id="contactName" name="name" autocomplete="name" required pattern=".*\S.*">
+                        <div class="invalid-feedback" id="contactNameError">Enter your name.</div>
+                    </div>
+                    <div class="mb-3">
+                        <label class="form-label" for="contactEmail">Email</label>
+                        <input class="form-control" id="contactEmail" name="email" type="email" autocomplete="email" required>
+                        <div class="invalid-feedback" id="contactEmailError">Enter a valid email address.</div>
+                    </div>
+                    <div>
+                        <label class="form-label" for="contactMessage">Message</label>
+                        <textarea class="form-control" id="contactMessage" name="message" rows="4" required></textarea>
+                        <div class="invalid-feedback" id="contactMessageError">Enter a message.</div>
+                    </div>
+                    <p class="contact-status mb-0" id="contactStatus" role="status"></p>
+                </div>
+                <div class="modal-footer">
+                    <button class="btn btn-glass" type="button" data-bs-dismiss="modal">Cancel</button>
+                    <button class="btn btn-glow" type="submit">Validate message</button>
+                </div>
+            </form>
+        </div>
+    </div>
+
+    <script src="https://cdn.jsdelivr.net/npm/bootstrap@5.3.3/dist/js/bootstrap.bundle.min.js"></script>
+    <script>
+        const mobileNav = document.getElementById('mobileNav');
+        const menuToggle = document.getElementById('menuToggle');
+        const contactModal = document.getElementById('contactModal');
+        const contactForm = document.getElementById('contactForm');
+        const contactStatus = document.getElementById('contactStatus');
+        const contactFields = contactForm.querySelectorAll('.form-control');
+        const contactMessage = document.getElementById('contactMessage');
+
+        mobileNav.addEventListener('click', event => {
+            const link = event.target.closest('a[href^="#"]');
+            if (!link) return;
+
+            event.preventDefault();
+            mobileNav.addEventListener('hidden.bs.offcanvas', () => {
+                const section = document.querySelector(link.hash);
+                if (location.hash !== link.hash) history.pushState(null, '', link.hash);
+                section.focus({ preventScroll: true });
+                section.scrollIntoView();
+            }, { once: true });
+            bootstrap.Offcanvas.getInstance(mobileNav).hide();
+        });
+
+        document.getElementById('mobileContact').addEventListener('click', () => {
+            mobileNav.addEventListener('hidden.bs.offcanvas', () => {
+                contactModal.addEventListener('hidden.bs.modal', () => menuToggle.focus(), { once: true });
+                bootstrap.Modal.getOrCreateInstance(contactModal).show();
+            }, { once: true });
+            bootstrap.Offcanvas.getInstance(mobileNav).hide();
+        });
+
+        contactModal.addEventListener('shown.bs.modal', () => contactFields[0].focus());
+
+        function updateContactValidation() {
+            contactMessage.setCustomValidity(contactMessage.value.trim() ? '' : 'Enter a message.');
+            contactFields.forEach(field => {
+                if (field.validity.valid) {
+                    field.removeAttribute('aria-invalid');
+                    field.removeAttribute('aria-describedby');
+                } else {
+                    field.setAttribute('aria-invalid', 'true');
+                    field.setAttribute('aria-describedby', field.id + 'Error');
+                }
+            });
+        }
+
+        contactForm.addEventListener('input', () => {
+            contactStatus.textContent = '';
+            if (contactForm.classList.contains('was-validated')) updateContactValidation();
+        });
+
+        contactForm.addEventListener('submit', event => {
+            event.preventDefault();
+            updateContactValidation();
+            contactForm.classList.add('was-validated');
+            if (!contactForm.checkValidity()) {
+                contactForm.querySelector(':invalid')?.focus();
+                return;
+            }
+            contactStatus.textContent = 'Validation complete. This demo form does not send messages.';
+        });
+    </script>
+</body>
+</html>
