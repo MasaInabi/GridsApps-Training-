@@ -1,0 +1,64 @@
+<!doctype html>
+<html lang="en" data-bs-theme="dark">
+<head>
+    <meta charset="utf-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1">
+    <meta name="theme-color" content="#0d0e11">
+    <meta name="description" content="Prepare and download a software project brief.">
+    <title>Contact | Company Software Studio</title>
+    <link rel="stylesheet" href="vendor/bootstrap.min.css">
+    <link rel="stylesheet" href="bootstrap.css">
+    <script src="vendor/bootstrap.bundle.min.js" defer></script>
+    <script src="script.js" defer></script>
+</head>
+<body>
+    <a class="skip-link" href="#main">Skip to content</a>
+    <header class="site-header">
+        <nav class="navbar glass-nav" aria-label="Main navigation">
+            <a class="navbar-brand brand" href="index.html" aria-label="Company home"><span class="brand-symbol" aria-hidden="true">C</span><span>COMPANY<span class="brand-dot">.</span></span></a>
+            <ul class="navbar-nav desktop-nav"><li><a class="nav-link" href="index.html">Home</a></li><li><a class="nav-link" href="about.html">About</a></li><li><a class="nav-link" href="services.html">Services</a></li><li><a class="nav-link" href="solutions.html">Solutions</a></li><li><a class="nav-link" href="projects.html">Projects</a></li><li><a class="nav-link" href="pricing.html">Pricing</a></li><li><a class="nav-link" href="dashboard.html">Dashboard</a></li><li><a class="nav-link" href="blog.html">Blog</a></li><li><a class="nav-link" href="faq.html">FAQ</a></li><li><a class="nav-link" href="contact.html" aria-current="page">Contact</a></li></ul>
+            <button class="btn btn-glow desktop-brief" type="button" data-bs-toggle="modal" data-bs-target="#contactModal">Start a project</button>
+            <button class="navbar-toggler menu-toggle" type="button" id="menuToggle" data-bs-toggle="offcanvas" data-bs-target="#mobileNav" aria-controls="mobileNav" aria-label="Open navigation"><span class="navbar-toggler-icon"></span></button>
+        </nav>
+    </header>
+    <div class="offcanvas offcanvas-end glass-overlay" id="mobileNav" tabindex="-1" aria-labelledby="mobileNavTitle">
+        <div class="offcanvas-header"><h2 class="offcanvas-title" id="mobileNavTitle">Menu</h2><button class="btn-close" type="button" data-bs-dismiss="offcanvas" aria-label="Close navigation"></button></div>
+        <nav class="offcanvas-body" aria-label="Mobile navigation">
+            <ul class="navbar-nav mobile-links"><li><a class="nav-link" href="index.html">Home</a></li><li><a class="nav-link" href="about.html">About</a></li><li><a class="nav-link" href="services.html">Services</a></li><li><a class="nav-link" href="solutions.html">Solutions</a></li><li><a class="nav-link" href="projects.html">Projects</a></li><li><a class="nav-link" href="pricing.html">Pricing</a></li><li><a class="nav-link" href="dashboard.html">Dashboard</a></li><li><a class="nav-link" href="blog.html">Blog</a></li><li><a class="nav-link" href="faq.html">FAQ</a></li><li><a class="nav-link" href="contact.html" aria-current="page">Contact</a></li></ul>
+            <button class="btn btn-glow mt-4 w-100" type="button" id="mobileContact">Start a project</button>
+        </nav>
+    </div>
+    <main id="main" tabindex="-1">
+<section class="container page-intro"><p class="section-kicker">Contact</p><h1>Make the next<br><span class="gradient-text">step concrete.</span></h1><p class="hero-description">Create a project brief you can share with your collaborators.</p></section>
+<section class="container block first-block contact-layout"><div><h2>A few details go a long way.</h2><p class="muted">Tell us who will use the product, the first task they need to complete and what’s getting in the way today.</p><ul class="brief-checklist"><li>Goal and intended audience</li><li>Must-have features or workflows</li><li>Target launch and any dependencies</li></ul><a class="text-link" href="faq.html">Read the project FAQ</a></div><div class="glass-card tile"><h2>Your project brief</h2><form class="brief-form" novalidate>
+<p class="muted">Download a text brief to share with your team or attach to an email. Your details stay in this browser session.</p>
+<div class="mb-3"><label for="full-name" class="form-label">Name</label><input id="full-name" name="name" class="form-control" autocomplete="name" maxlength="100" required aria-describedby="full-name-error"><div id="full-name-error" class="invalid-feedback">Enter your name.</div></div>
+<div class="mb-3"><label for="full-email" class="form-label">Email</label><input id="full-email" name="email" type="email" class="form-control" autocomplete="email" maxlength="254" required aria-describedby="full-email-error"><div id="full-email-error" class="invalid-feedback">Enter a valid email address.</div></div>
+<div class="mb-3"><label for="full-scope" class="form-label">Project type</label><select id="full-scope" name="scope" class="form-select"><option>Website</option><option>Product design</option><option>Custom software</option><option>Launch package</option><option>Build package</option><option>Partner package</option><option>Other</option></select></div>
+<div class="mb-4"><label for="full-message" class="form-label">What are you building?</label><textarea id="full-message" name="message" class="form-control" rows="4" maxlength="3000" required aria-describedby="full-message-error"></textarea><div id="full-message-error" class="invalid-feedback">Describe your project.</div></div>
+<button class="btn btn-glow" type="submit">Download brief</button><p class="contact-status mb-0" role="status"></p>
+</form></div></section>
+    </main>
+    <footer class="site-footer">
+        <div class="container footer-grid">
+            <div><a class="brand footer-brand" href="index.html" aria-label="Company home"><span class="brand-symbol" aria-hidden="true">C</span><span>COMPANY<span class="brand-dot">.</span></span></a><p class="mt-3 mb-0">Independent software design and engineering.</p></div>
+            <nav aria-label="Footer navigation"><a href="projects.html">Projects</a><a href="blog.html">Field notes</a><a href="faq.html">FAQ</a><a href="contact.html">Contact</a></nav>
+        </div>
+    </footer>
+    <div class="modal fade" id="contactModal" tabindex="-1" aria-labelledby="contactTitle">
+        <div class="modal-dialog modal-dialog-centered modal-dialog-scrollable">
+            <div class="modal-content glass-overlay">
+                <div class="modal-header"><h2 class="modal-title fs-4" id="contactTitle">Start a project</h2><button class="btn-close" type="button" data-bs-dismiss="modal" aria-label="Close project brief"></button></div>
+                <div class="modal-body"><form class="brief-form" novalidate>
+<p class="muted">Download a text brief to share with your team or attach to an email. Your details stay in this browser session.</p>
+<div class="mb-3"><label for="quick-name" class="form-label">Name</label><input id="quick-name" name="name" class="form-control" autocomplete="name" maxlength="100" required aria-describedby="quick-name-error"><div id="quick-name-error" class="invalid-feedback">Enter your name.</div></div>
+<div class="mb-3"><label for="quick-email" class="form-label">Email</label><input id="quick-email" name="email" type="email" class="form-control" autocomplete="email" maxlength="254" required aria-describedby="quick-email-error"><div id="quick-email-error" class="invalid-feedback">Enter a valid email address.</div></div>
+<div class="mb-3"><label for="quick-scope" class="form-label">Project type</label><select id="quick-scope" name="scope" class="form-select"><option>Website</option><option>Product design</option><option>Custom software</option><option>Launch package</option><option>Build package</option><option>Partner package</option><option>Other</option></select></div>
+<div class="mb-4"><label for="quick-message" class="form-label">What are you building?</label><textarea id="quick-message" name="message" class="form-control" rows="4" maxlength="3000" required aria-describedby="quick-message-error"></textarea><div id="quick-message-error" class="invalid-feedback">Describe your project.</div></div>
+<button class="btn btn-glow" type="submit">Download brief</button><p class="contact-status mb-0" role="status"></p>
+</form></div>
+            </div>
+        </div>
+    </div>
+</body>
+</html>

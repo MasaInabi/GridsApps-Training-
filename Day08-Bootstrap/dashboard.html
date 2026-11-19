@@ -1,0 +1,69 @@
+<!doctype html>
+<html lang="en" data-bs-theme="dark">
+<head>
+    <meta charset="utf-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1">
+    <meta name="theme-color" content="#0d0e11">
+    <meta name="description" content="Try the Signal Operations delivery dashboard demo.">
+    <title>Dashboard | Company Software Studio</title>
+    <link rel="stylesheet" href="vendor/bootstrap.min.css">
+    <link rel="stylesheet" href="bootstrap.css">
+    <script src="vendor/bootstrap.bundle.min.js" defer></script>
+    <script src="script.js" defer></script>
+</head>
+<body>
+    <a class="skip-link" href="#main">Skip to content</a>
+    <header class="site-header">
+        <nav class="navbar glass-nav" aria-label="Main navigation">
+            <a class="navbar-brand brand" href="index.html" aria-label="Company home"><span class="brand-symbol" aria-hidden="true">C</span><span>COMPANY<span class="brand-dot">.</span></span></a>
+            <ul class="navbar-nav desktop-nav"><li><a class="nav-link" href="index.html">Home</a></li><li><a class="nav-link" href="about.html">About</a></li><li><a class="nav-link" href="services.html">Services</a></li><li><a class="nav-link" href="solutions.html">Solutions</a></li><li><a class="nav-link" href="projects.html">Projects</a></li><li><a class="nav-link" href="pricing.html">Pricing</a></li><li><a class="nav-link" href="dashboard.html" aria-current="page">Dashboard</a></li><li><a class="nav-link" href="blog.html">Blog</a></li><li><a class="nav-link" href="faq.html">FAQ</a></li><li><a class="nav-link" href="contact.html">Contact</a></li></ul>
+            <button class="btn btn-glow desktop-brief" type="button" data-bs-toggle="modal" data-bs-target="#contactModal">Start a project</button>
+            <button class="navbar-toggler menu-toggle" type="button" id="menuToggle" data-bs-toggle="offcanvas" data-bs-target="#mobileNav" aria-controls="mobileNav" aria-label="Open navigation"><span class="navbar-toggler-icon"></span></button>
+        </nav>
+    </header>
+    <div class="offcanvas offcanvas-end glass-overlay" id="mobileNav" tabindex="-1" aria-labelledby="mobileNavTitle">
+        <div class="offcanvas-header"><h2 class="offcanvas-title" id="mobileNavTitle">Menu</h2><button class="btn-close" type="button" data-bs-dismiss="offcanvas" aria-label="Close navigation"></button></div>
+        <nav class="offcanvas-body" aria-label="Mobile navigation">
+            <ul class="navbar-nav mobile-links"><li><a class="nav-link" href="index.html">Home</a></li><li><a class="nav-link" href="about.html">About</a></li><li><a class="nav-link" href="services.html">Services</a></li><li><a class="nav-link" href="solutions.html">Solutions</a></li><li><a class="nav-link" href="projects.html">Projects</a></li><li><a class="nav-link" href="pricing.html">Pricing</a></li><li><a class="nav-link" href="dashboard.html" aria-current="page">Dashboard</a></li><li><a class="nav-link" href="blog.html">Blog</a></li><li><a class="nav-link" href="faq.html">FAQ</a></li><li><a class="nav-link" href="contact.html">Contact</a></li></ul>
+            <button class="btn btn-glow mt-4 w-100" type="button" id="mobileContact">Start a project</button>
+        </nav>
+    </div>
+    <main id="main" tabindex="-1">
+<section class="container page-intro"><p class="section-kicker">Dashboard demo</p><h1>Signal <span class="gradient-text">Operations.</span></h1><p class="hero-description">Explore a sample delivery portfolio. Filter the project list by status and export the resulting view as a CSV.</p></section>
+<section class="container block first-block" aria-label="Portfolio overview">
+<div class="tile-grid dashboard-kpis">
+<div class="glass-card tile"><p>Visible projects</p><strong id="projectCount">6</strong></div>
+<div class="glass-card tile"><p>Open tasks in view</p><strong id="openCount">21</strong></div>
+<div class="glass-card tile"><p>Average progress</p><strong id="averageProgress">55%</strong></div>
+</div>
+<div class="glass-card dashboard-board mt-4">
+<div class="board-head"><div><h2>Project portfolio</h2><p class="muted mb-0">Illustrative data</p></div><div class="board-controls"><div><label for="statusFilter" class="form-label">Filter by status</label><select id="statusFilter" class="form-select"><option value="all">All statuses</option><option>In progress</option><option>Blocked</option><option>Complete</option></select></div><button type="button" class="btn btn-glass" id="exportProjects">Export CSV</button></div></div>
+<p class="visually-hidden" role="status" id="dashboardStatus"></p>
+<table class="project-table"><caption class="visually-hidden">Sample projects and delivery metrics</caption><thead><tr><th scope="col">Project</th><th scope="col">Status</th><th scope="col">Open tasks</th><th scope="col">Progress</th></tr></thead><tbody id="portfolioRows">
+<tr data-status="In progress" data-open="6" data-progress="64"><th scope="row">Atlas Workspace</th><td><span class="status-label">In progress</span></td><td>6</td><td><div class="progress-cell"><span>64%</span><progress max="100" value="64" aria-label="Atlas Workspace progress"></progress></div></td></tr><tr data-status="Complete" data-open="0" data-progress="100"><th scope="row">Ember Platform</th><td><span class="status-label">Complete</span></td><td>0</td><td><div class="progress-cell"><span>100%</span><progress max="100" value="100" aria-label="Ember Platform progress"></progress></div></td></tr><tr data-status="In progress" data-open="4" data-progress="76"><th scope="row">Signal Operations</th><td><span class="status-label">In progress</span></td><td>4</td><td><div class="progress-cell"><span>76%</span><progress max="100" value="76" aria-label="Signal Operations progress"></progress></div></td></tr><tr data-status="Blocked" data-open="5" data-progress="25"><th scope="row">Access Review</th><td><span class="status-label">Blocked</span></td><td>5</td><td><div class="progress-cell"><span>25%</span><progress max="100" value="25" aria-label="Access Review progress"></progress></div></td></tr><tr data-status="In progress" data-open="4" data-progress="48"><th scope="row">Release Hub</th><td><span class="status-label">In progress</span></td><td>4</td><td><div class="progress-cell"><span>48%</span><progress max="100" value="48" aria-label="Release Hub progress"></progress></div></td></tr><tr data-status="Blocked" data-open="2" data-progress="17"><th scope="row">Billing Sync</th><td><span class="status-label">Blocked</span></td><td>2</td><td><div class="progress-cell"><span>17%</span><progress max="100" value="17" aria-label="Billing Sync progress"></progress></div></td></tr>
+</tbody></table>
+</div></section>
+    </main>
+    <footer class="site-footer">
+        <div class="container footer-grid">
+            <div><a class="brand footer-brand" href="index.html" aria-label="Company home"><span class="brand-symbol" aria-hidden="true">C</span><span>COMPANY<span class="brand-dot">.</span></span></a><p class="mt-3 mb-0">Independent software design and engineering.</p></div>
+            <nav aria-label="Footer navigation"><a href="projects.html">Projects</a><a href="blog.html">Field notes</a><a href="faq.html">FAQ</a><a href="contact.html">Contact</a></nav>
+        </div>
+    </footer>
+    <div class="modal fade" id="contactModal" tabindex="-1" aria-labelledby="contactTitle">
+        <div class="modal-dialog modal-dialog-centered modal-dialog-scrollable">
+            <div class="modal-content glass-overlay">
+                <div class="modal-header"><h2 class="modal-title fs-4" id="contactTitle">Start a project</h2><button class="btn-close" type="button" data-bs-dismiss="modal" aria-label="Close project brief"></button></div>
+                <div class="modal-body"><form class="brief-form" novalidate>
+<p class="muted">Download a text brief to share with your team or attach to an email. Your details stay in this browser session.</p>
+<div class="mb-3"><label for="quick-name" class="form-label">Name</label><input id="quick-name" name="name" class="form-control" autocomplete="name" maxlength="100" required aria-describedby="quick-name-error"><div id="quick-name-error" class="invalid-feedback">Enter your name.</div></div>
+<div class="mb-3"><label for="quick-email" class="form-label">Email</label><input id="quick-email" name="email" type="email" class="form-control" autocomplete="email" maxlength="254" required aria-describedby="quick-email-error"><div id="quick-email-error" class="invalid-feedback">Enter a valid email address.</div></div>
+<div class="mb-3"><label for="quick-scope" class="form-label">Project type</label><select id="quick-scope" name="scope" class="form-select"><option>Website</option><option>Product design</option><option>Custom software</option><option>Launch package</option><option>Build package</option><option>Partner package</option><option>Other</option></select></div>
+<div class="mb-4"><label for="quick-message" class="form-label">What are you building?</label><textarea id="quick-message" name="message" class="form-control" rows="4" maxlength="3000" required aria-describedby="quick-message-error"></textarea><div id="quick-message-error" class="invalid-feedback">Describe your project.</div></div>
+<button class="btn btn-glow" type="submit">Download brief</button><p class="contact-status mb-0" role="status"></p>
+</form></div>
+            </div>
+        </div>
+    </div>
+</body>
+</html>

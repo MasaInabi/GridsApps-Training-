@@ -1,0 +1,57 @@
+<!doctype html>
+<html lang="en" data-bs-theme="dark">
+<head>
+    <meta charset="utf-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1">
+    <meta name="theme-color" content="#0d0e11">
+    <meta name="description" content="Studio field notes on software design and delivery.">
+    <title>Blog | Company Software Studio</title>
+    <link rel="stylesheet" href="vendor/bootstrap.min.css">
+    <link rel="stylesheet" href="bootstrap.css">
+    <script src="vendor/bootstrap.bundle.min.js" defer></script>
+    <script src="script.js" defer></script>
+</head>
+<body>
+    <a class="skip-link" href="#main">Skip to content</a>
+    <header class="site-header">
+        <nav class="navbar glass-nav" aria-label="Main navigation">
+            <a class="navbar-brand brand" href="index.html" aria-label="Company home"><span class="brand-symbol" aria-hidden="true">C</span><span>COMPANY<span class="brand-dot">.</span></span></a>
+            <ul class="navbar-nav desktop-nav"><li><a class="nav-link" href="index.html">Home</a></li><li><a class="nav-link" href="about.html">About</a></li><li><a class="nav-link" href="services.html">Services</a></li><li><a class="nav-link" href="solutions.html">Solutions</a></li><li><a class="nav-link" href="projects.html">Projects</a></li><li><a class="nav-link" href="pricing.html">Pricing</a></li><li><a class="nav-link" href="dashboard.html">Dashboard</a></li><li><a class="nav-link" href="blog.html" aria-current="page">Blog</a></li><li><a class="nav-link" href="faq.html">FAQ</a></li><li><a class="nav-link" href="contact.html">Contact</a></li></ul>
+            <button class="btn btn-glow desktop-brief" type="button" data-bs-toggle="modal" data-bs-target="#contactModal">Start a project</button>
+            <button class="navbar-toggler menu-toggle" type="button" id="menuToggle" data-bs-toggle="offcanvas" data-bs-target="#mobileNav" aria-controls="mobileNav" aria-label="Open navigation"><span class="navbar-toggler-icon"></span></button>
+        </nav>
+    </header>
+    <div class="offcanvas offcanvas-end glass-overlay" id="mobileNav" tabindex="-1" aria-labelledby="mobileNavTitle">
+        <div class="offcanvas-header"><h2 class="offcanvas-title" id="mobileNavTitle">Menu</h2><button class="btn-close" type="button" data-bs-dismiss="offcanvas" aria-label="Close navigation"></button></div>
+        <nav class="offcanvas-body" aria-label="Mobile navigation">
+            <ul class="navbar-nav mobile-links"><li><a class="nav-link" href="index.html">Home</a></li><li><a class="nav-link" href="about.html">About</a></li><li><a class="nav-link" href="services.html">Services</a></li><li><a class="nav-link" href="solutions.html">Solutions</a></li><li><a class="nav-link" href="projects.html">Projects</a></li><li><a class="nav-link" href="pricing.html">Pricing</a></li><li><a class="nav-link" href="dashboard.html">Dashboard</a></li><li><a class="nav-link" href="blog.html" aria-current="page">Blog</a></li><li><a class="nav-link" href="faq.html">FAQ</a></li><li><a class="nav-link" href="contact.html">Contact</a></li></ul>
+            <button class="btn btn-glow mt-4 w-100" type="button" id="mobileContact">Start a project</button>
+        </nav>
+    </div>
+    <main id="main" tabindex="-1">
+<section class="container page-intro"><p class="section-kicker">Field notes</p><h1>Practical notes<br><span class="gradient-text">from the studio.</span></h1><p class="hero-description">Short reads on defining useful software, designing for decisions and handing work over with care.</p></section>
+<section class="container block first-block blog-layout"><nav class="glass-card tile article-index" aria-label="In this issue"><h2>In this issue</h2><a class="text-link" href="#scope">How to scope a useful first release</a><a class="text-link" href="#dashboard-notes">Design a dashboard around decisions</a><a class="text-link" href="#handoff">Make the handoff part of the build</a></nav><div class="article-list"><article id="scope" class="glass-card tile"><p class="section-kicker">Strategy</p><h2>How to scope a useful first release</h2><p class="muted">Start by naming the person, the action they need to complete and what success looks like. A release goal such as “a coordinator can approve a request and notify the requester” is easier to test than “launch the portal.”</p><p class="muted mb-0">Walk through the current workflow with a real example. Separate steps that must happen at launch from steps the team can handle manually. Bring the release scope back to the person who does the work and try it with a realistic edge case.</p></article><article id="dashboard-notes" class="glass-card tile"><p class="section-kicker">Engineering</p><h2>Design a dashboard around decisions</h2><p class="muted">Ask what question the team needs answered before picking a chart. A weekly delivery review may need to surface blocked work, who owns it and what has changed since the last meeting.</p><p class="muted mb-0">Show precise values alongside visual indicators. Use named states, a filter and an export when the team needs to move from review into follow-up work.</p></article><article id="handoff" class="glass-card tile"><p class="section-kicker">Delivery</p><h2>Make the handoff part of the build</h2><p class="muted">Write operational notes as you implement each workflow. Capture data assumptions, configuration decisions and the steps required to verify a release while those details are fresh.</p><p class="muted mb-0">Before launch, let the owning team carry out a routine change and a rollback exercise. Update the notes where they get stuck. A tested handoff gives the team a reliable starting point on day one.</p></article></div></section><section class="container block"><div class="cta-panel"><div><h2>See a dashboard in action.</h2><p class="muted mb-0">Try filtering and exporting the Signal sample portfolio.</p></div><a href="dashboard.html" class="btn btn-glow">Try Signal Operations</a></div></section>
+    </main>
+    <footer class="site-footer">
+        <div class="container footer-grid">
+            <div><a class="brand footer-brand" href="index.html" aria-label="Company home"><span class="brand-symbol" aria-hidden="true">C</span><span>COMPANY<span class="brand-dot">.</span></span></a><p class="mt-3 mb-0">Independent software design and engineering.</p></div>
+            <nav aria-label="Footer navigation"><a href="projects.html">Projects</a><a href="blog.html">Field notes</a><a href="faq.html">FAQ</a><a href="contact.html">Contact</a></nav>
+        </div>
+    </footer>
+    <div class="modal fade" id="contactModal" tabindex="-1" aria-labelledby="contactTitle">
+        <div class="modal-dialog modal-dialog-centered modal-dialog-scrollable">
+            <div class="modal-content glass-overlay">
+                <div class="modal-header"><h2 class="modal-title fs-4" id="contactTitle">Start a project</h2><button class="btn-close" type="button" data-bs-dismiss="modal" aria-label="Close project brief"></button></div>
+                <div class="modal-body"><form class="brief-form" novalidate>
+<p class="muted">Download a text brief to share with your team or attach to an email. Your details stay in this browser session.</p>
+<div class="mb-3"><label for="quick-name" class="form-label">Name</label><input id="quick-name" name="name" class="form-control" autocomplete="name" maxlength="100" required aria-describedby="quick-name-error"><div id="quick-name-error" class="invalid-feedback">Enter your name.</div></div>
+<div class="mb-3"><label for="quick-email" class="form-label">Email</label><input id="quick-email" name="email" type="email" class="form-control" autocomplete="email" maxlength="254" required aria-describedby="quick-email-error"><div id="quick-email-error" class="invalid-feedback">Enter a valid email address.</div></div>
+<div class="mb-3"><label for="quick-scope" class="form-label">Project type</label><select id="quick-scope" name="scope" class="form-select"><option>Website</option><option>Product design</option><option>Custom software</option><option>Launch package</option><option>Build package</option><option>Partner package</option><option>Other</option></select></div>
+<div class="mb-4"><label for="quick-message" class="form-label">What are you building?</label><textarea id="quick-message" name="message" class="form-control" rows="4" maxlength="3000" required aria-describedby="quick-message-error"></textarea><div id="quick-message-error" class="invalid-feedback">Describe your project.</div></div>
+<button class="btn btn-glow" type="submit">Download brief</button><p class="contact-status mb-0" role="status"></p>
+</form></div>
+            </div>
+        </div>
+    </div>
+</body>
+</html>
