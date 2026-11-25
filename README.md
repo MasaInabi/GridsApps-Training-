@@ -54,9 +54,14 @@ https://github.com/MasaInabi/GridsApps-Training-
 
 ## Days 9–15
 
-- `Day09-Tailwind` contains the NOVA landing page, dashboard and authentication UI. Run `npm ci` and `npm run dev` from that directory.
-- `Day12-JavaScript` contains six JavaScript logic challenges.
-- `Day13-Task-Management` contains the Day 13 CRUD exercise and the Day 15 final project demo.
-- `Day14-Country-Explorer` contains the modular country API exercise.
+| Day | Project | Run from the project folder |
+| --- | --- | --- |
+| 9 | [Tailwind landing page](Day09-Tailwind/) | `npm ci` then `npm run dev` |
+| 10 | [Tailwind dashboard](Day10-Tailwind-Dashboard/) | `npm ci` then `npm run dev` |
+| 11 | [Tailwind SaaS project](Day11-Tailwind-SaaS/) | `npm ci` then `npm run dev` |
+| 12 | [JavaScript logic](Day12-JavaScript/) | Import the functions from `challenges.mjs` |
+| 13 | [Task management](Day13-Task-Management/) | `python -m http.server 8000` |
+| 14 | [Country explorer](Day14-Country-Explorer/) | `python -m http.server 8000` |
+| 15 | [Final task manager](Day15-Final-Task-Manager/) | `python -m http.server 8000` |
 
-For the browser exercises, run `python -m http.server 8000` from the repository root and open the exercise folder at `http://localhost:8000`.
+For the Python server, open http://localhost:8000 in your browser. Stop the server before switching projects.
