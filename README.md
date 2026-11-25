@@ -65,3 +65,5 @@ https://github.com/MasaInabi/GridsApps-Training-
 | 15 | [Final task manager](Day15-Final-Task-Manager/) | `python -m http.server 8000` |
 
 For the Python server, open http://localhost:8000 in your browser. Stop the server before switching projects.
+
+[Demo checklist and exit-ticket prompts](TRAINING-DEMOS.md)
