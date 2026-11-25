@@ -1,0 +1,24 @@
+@import "tailwindcss";
+
+@theme {
+  --font-display: "Space Grotesk", sans-serif;
+  --font-body: "DM Sans", sans-serif;
+  --color-night: #080b19;
+  --color-electric: #8b72ff;
+  --color-aqua: #4ee4e3;
+}
+
+:root { font-family: var(--font-body); color: #f4f4ff; background: #080b19; font-synthesis: none; }
+html { scroll-behavior: smooth; }
+body { margin: 0; min-width: 320px; }
+button, a { -webkit-tap-highlight-color: transparent; }
+button:focus-visible, a:focus-visible { outline: 2px solid #4ee4e3; outline-offset: 4px; }
+.bg-mesh { background-image: radial-gradient(ellipse 44% 45% at 76% 20%, rgba(102,67,229,.21), transparent 85%), radial-gradient(ellipse 36% 40% at 8% 72%, rgba(30,113,188,.14), transparent 85%); }
+.glass { background: linear-gradient(135deg,rgba(255,255,255,.085),rgba(255,255,255,.025)); border: 1px solid rgba(255,255,255,.11); box-shadow: 0 24px 65px rgba(0,0,0,.20); backdrop-filter: blur(18px); }
+.gradient-word { background: linear-gradient(100deg,#a99aff 7%,#8a79ff 44%,#61e8e2 100%); -webkit-background-clip:text; background-clip:text; color: transparent; }
+.glow-btn { box-shadow: 0 9px 30px rgba(120,92,255,.32), inset 0 1px rgba(255,255,255,.25); }
+.orb { filter: blur(1px); background: radial-gradient(circle at 35% 30%,#c6bdff,#7962ed 45%,#35236d 80%); box-shadow: inset -16px -20px 45px rgba(0,0,0,.38), 0 0 100px rgba(122,99,255,.28); }
+.float-slow { animation: float 7s ease-in-out infinite; }
+.float-late { animation: float 6s ease-in-out -2s infinite; }
+@keyframes float { 0%,100% {transform:translateY(0)} 50% {transform:translateY(-14px)} }
+.grid-lines { background-image: linear-gradient(rgba(255,255,255,.035) 1px,transparent 1px),linear-gradient(90deg,rgba(255,255,255,.035) 1px,transparent 1px); background-size: 35px 35px; mask-image: linear-gradient(to bottom,transparent,#000 20%,#000 70%,transparent); }
