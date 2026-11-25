@@ -1,0 +1,25 @@
+<!doctype html>
+<html lang="en">
+<head>
+  <meta charset="utf-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1">
+  <title>NOVA Country Explorer</title>
+  <link rel="stylesheet" href="../Day13-Task-Management/style.css">
+</head>
+<body>
+  <main>
+    <h1>Country Explorer</h1>
+    <p>Browse countries by name or geographic region.</p>
+    <section aria-label="Countries">
+      <div class="filters">
+        <label>Country <input id="search" type="search"></label>
+        <label>Region <select id="region"><option value="">All regions</option></select></label>
+      </div>
+      <p id="status" role="status">Loading countries…</p>
+      <button type="button" id="retry" hidden>Retry</button>
+      <ul id="countries"></ul>
+    </section>
+  </main>
+  <script type="module" src="./main.js"></script>
+</body>
+</html>

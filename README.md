@@ -51,3 +51,12 @@ The website uses CSS Flexbox, Grid, and media queries to support mobile, tablet,
 ## GitHub
 
 https://github.com/MasaInabi/GridsApps-Training-
+
+## Days 9–15
+
+- `Day09-Tailwind` contains the NOVA landing page, dashboard and authentication UI. Run `npm ci` and `npm run dev` from that directory.
+- `Day12-JavaScript` contains six JavaScript logic challenges.
+- `Day13-Task-Management` contains the Day 13 CRUD exercise and the Day 15 final project demo.
+- `Day14-Country-Explorer` contains the modular country API exercise.
+
+For the browser exercises, run `python -m http.server 8000` from the repository root and open the exercise folder at `http://localhost:8000`.
