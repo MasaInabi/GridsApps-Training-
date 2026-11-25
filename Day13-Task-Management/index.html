@@ -1,0 +1,30 @@
+<!doctype html>
+<html lang="en">
+<head>
+  <meta charset="utf-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1">
+  <title>NOVA Task Manager</title>
+  <link rel="stylesheet" href="./style.css">
+</head>
+<body>
+  <main>
+    <header><h1>NOVA Task Manager</h1><p>Plan and track your work.</p></header>
+    <form id="task-form">
+      <label for="title">Task title</label>
+      <input id="title" maxlength="120" required>
+      <div class="actions"><button type="submit" id="save">Add task</button><button type="button" id="cancel" hidden>Cancel edit</button></div>
+    </form>
+    <section aria-label="Task list">
+      <div class="filters">
+        <label>Search tasks <input id="search" type="search"></label>
+        <label>Filter <select id="filter"><option value="all">All</option><option value="open">Open</option><option value="done">Completed</option></select></label>
+      </div>
+      <p id="status" role="status">Loading tasks…</p>
+      <p id="empty" hidden></p>
+      <ul id="tasks"></ul>
+    </section>
+  </main>
+  <script type="module" src="./main.js"></script>
+</body>
+</html>
+
