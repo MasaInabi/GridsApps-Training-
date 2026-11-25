@@ -8,4 +8,4 @@ Day 15 demo walkthrough: the form validates input and calls `update`. That funct
 the new records to browser storage before updating the UI. `render` derives the visible
 list from the records, search term and selected filter.
 
-See [assessment practice and demo walkthrough](assessment-practice.md). The official timed assessment materials are pending.
+See the [project demo checklist](../TRAINING-DEMOS.md).

@@ -66,4 +66,4 @@ https://github.com/MasaInabi/GridsApps-Training-
 
 For the Python server, open http://localhost:8000 in your browser. Stop the server before switching projects.
 
-[Demo checklist and exit-ticket prompts](TRAINING-DEMOS.md)
+[Demo checklist](TRAINING-DEMOS.md)
