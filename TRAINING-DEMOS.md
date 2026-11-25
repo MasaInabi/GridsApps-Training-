@@ -1,4 +1,4 @@
-# Days 9–15 demo checklist
+# Days 9ΓÇô15 demo checklist
 
 Use the launch commands in the repository README. Walk through each project and record any findings after trying it.
 
@@ -10,13 +10,11 @@ Use the launch commands in the repository README. Walk through each project and 
 | 12 | Run the six JavaScript solutions with valid and invalid values. | Grade boundaries, empty input, sorting without mutation and cent-based totals. |
 | 13 | Create, edit, complete, search, filter and delete tasks. Refresh after saving to show persistence. | DOM event delegation and localStorage. |
 | 14 | Search for a country, select a region, then try a search with no matches. Set the browser offline and reload to show the sample-data message. Reconnect and click Retry. | Why HTTP status checks and network error handling are separate from filtering the displayed list. |
-| 15 | Demonstrate the standalone final project, then follow the code walkthrough and timed practice in [the assessment guide](Day15-Final-Task-Manager/assessment-practice.md). | Validation, rendering, persistence and error feedback. |
+| 15 | Add, edit, finish and delete a task. Search, filter and refresh to confirm persistence. | Validation, rendering, persistence and error feedback. |
 
-## Exit ticket prompts
 
-For each day, record what you built, a problem you encountered and how you addressed it, one concept you can explain, and any remaining work.
 
 ## Supplied training materials still needed
 
 - Day 14 trainer-provided broken async application. The repository includes a separate practice solution for stale asynchronous results.
-- Day 15 official timed assessment questions and reference design. The repository includes a practice exercise based on the published format.
+- Day 15 official timed assessment materials and reference design.
