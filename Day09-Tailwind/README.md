@@ -36,3 +36,7 @@ npm.cmd run build
 - The statistics, pricing, testimonials and product brands are **illustrative demo content**, not real business claims.
 - No `node_modules` or `dist` folder is included; npm creates these locally.
 - The font is loaded from Google Fonts and falls back to system sans-serif if offline.
+
+## Workspace
+Scroll past the landing page to access nine dashboard views plus login and registration.
+Dashboard data is illustrative. The authentication forms demonstrate browser validation.

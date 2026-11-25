@@ -1,3 +1,4 @@
+import { mountWorkspace } from './workspace.js'
 import './style.css'
 
 const products = [
@@ -80,3 +81,7 @@ document.querySelectorAll('[data-product]').forEach(button => button.addEventLis
   clearTimeout(toastTimeout)
   toastTimeout = setTimeout(() => toast.classList.add('hidden'), 3200)
 }))
+
+const workspace = document.createElement('div')
+document.querySelector('#app footer').before(workspace)
+mountWorkspace(workspace)
