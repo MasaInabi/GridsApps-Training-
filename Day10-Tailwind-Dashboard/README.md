@@ -1,5 +1,3 @@
-# Day 10 - Tailwind Dashboard
+# Day 10 - Responsive Tailwind Dashboard
 
-A standalone responsive NOVA dashboard with KPI cards, activity, orders, and login and registration validation demos.
-
-Run `npm ci`, then `npm run dev`. Run `npm run build` for a production build.
+HTML, Tailwind CSS v4, JavaScript, Vite
